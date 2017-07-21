@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="kurs_bi_action">
+            <field name="name">Kurs BI</field>
+            <field name="res_model">kurs.bi.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <record model="ir.ui.view" id="kurs_bi_wizard_form_view">
+            <field name="name">kurs.bi.wizard.form</field>
+            <field name="model">kurs.bi.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Kurs BI">
+                    <group>
+                        <group>
+                            <field name="currency"/>
+                            <field name="kurs_jual"/>
+                        </group>
+                        <group>
+                            <field name="kurs_tengah"/>
+                            <field name="kurs_beli"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="update" type="object"
+                                string="Update" class="oe_highlight"/>
+                        <!--or
+                        <button special="cancel" string="Cancel"/>-->
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

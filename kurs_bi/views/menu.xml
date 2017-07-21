@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem id="kurs_bi_menu" name="Kurs BI" action="kurs_bi_action"/>
+    </data>
+</odoo>
